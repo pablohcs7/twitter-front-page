@@ -1,0 +1,183 @@
+/*============RESET================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*============BASE================*/
+html{
+  -webkit-text-size-adjust: auto;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font: 400 1rem 'Fira Sans', sans-serif;
+}
+
+.button{
+  height: 2.5rem;
+  padding: 0 4rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  align-items: center;
+  display: inline-flex;
+  font-size: 1rem;
+  justify-content:center;
+}
+
+.divider{
+  height: 1px;
+  width: 9.2rem;
+  background: rgba(128, 128, 128, 0.435);
+  display: block;
+}
+
+/*============LAYOUT================*/
+.container{
+  margin: 2rem;
+}
+
+/*============HOME================*/
+#header{
+  margin-bottom: 2.5rem;
+}
+
+.logo{
+  margin-bottom: 2.5rem;
+}
+
+.logo i{
+  color: rgb(214, 217, 219);
+  font-size: 2.5rem;
+}
+
+#header h1{
+  font-size: 3rem;
+}
+
+main h2{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons{
+  display: inline-grid;
+  gap: 1.2rem;
+  
+}
+
+#button-google .text-button{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(79, 75, 75, 0.939);
+
+}
+
+.buttons a img{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.buttons a i{
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.buttons .or{
+  display:inline-flex;
+  align-items: center;
+  gap: 0.4rem
+}
+
+.or .divider{
+  width: 100%;
+}
+
+.buttons #button-other{
+  justify-content: center;
+  background-color: rgb(0,172,237);
+  color:white;
+  padding: 0 2rem;
+}
+
+.terms{
+  font-size: 0.7rem;
+  margin-top: -0.7rem;
+  color: rgba(214, 217, 219, 0.509);
+  margin-bottom: 2rem;
+}
+
+.terms a{
+  color: rgb(0,172,237);
+}
+
+.terms a:visited,
+.terms a:hover{
+  text-decoration: underline;
+}
+
+.have-account #signin{
+  color: rgb(0,172,237);
+}
+
+.have-account a{
+  background-color: transparent;
+  border-color:rgba(168, 219, 237, 0.471) ;
+  border-style: solid;
+  border-width: 0.1rem;
+}
+
+/*------------------------------TWITTER ART------------------------------------------*/
+.art{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.art .art-icon{
+  position: absolute;
+}
+
+.art-background img{
+  width: 150%;
+  height: 150%;
+}
+
+.art-icon i{
+  font-size: 20rem;
+}
+
+/*----------------------------FOOTER-----------------------*/
+.footer{
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  padding: 0.8rem;
+}
+
+.footer p,
+.footer a{
+  font-size: 12px;
+  align-items: center;
+  color: rgba(214, 217, 219, 0.603);
+  display: inline-block;
+}
+
+
+.footer a{
+  margin: 0.2rem;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
