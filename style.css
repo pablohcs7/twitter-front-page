@@ -5,23 +5,23 @@
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
 /*============BASE================*/
-html{
+html {
   -webkit-text-size-adjust: auto;
 }
 
-body{
+body {
   background-color: black;
   color: white;
   font: 400 1rem 'Fira Sans', sans-serif;
 }
 
-.button{
+.button {
   height: 2.5rem;
   padding: 0 4rem;
   background-color: white;
@@ -30,134 +30,130 @@ body{
   align-items: center;
   display: inline-flex;
   font-size: 1rem;
-  justify-content:center;
+  justify-content: center;
 }
 
-.divider{
+.divider {
   height: 1px;
-  width: 9.2rem;
+  width: 100%;
   background: rgba(128, 128, 128, 0.435);
-  display: block;
 }
 
 /*============LAYOUT================*/
-.container{
+.container {
   margin: 2rem;
 }
 
 /*============HOME================*/
-#header{
+#header {
   margin-bottom: 2.5rem;
 }
 
-.logo{
+.logo {
   margin-bottom: 2.5rem;
 }
 
-.logo i{
+.logo i {
   color: rgb(214, 217, 219);
   font-size: 2.5rem;
 }
 
-#header h1{
+#header h1 {
   font-size: 3rem;
 }
 
-main h2{
+main h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.buttons{
+.buttons {
   display: inline-grid;
-  gap: 1.2rem;
-  
+  gap: 0.5rem;
 }
 
-#button-google .text-button{
+#button-google .text-button {
   font-family: 'Roboto', sans-serif;
-  color: rgba(79, 75, 75, 0.939);
-
+  color: rgba(0, 0, 0, 0.986);
 }
 
-.buttons a img{
+.buttons a img {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.5rem;
 }
 
-.buttons a i{
+.buttons a i {
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
 
-.buttons .or{
-  display:inline-flex;
+.buttons .or {
+  display: flex;
   align-items: center;
-  gap: 0.4rem
 }
 
-.or .divider{
-  width: 100%;
+.buttons .or p {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.buttons #button-other{
+.buttons #button-other {
   justify-content: center;
-  background-color: rgb(0,172,237);
-  color:white;
+  background-color: rgb(0, 172, 237);
+  color: white;
   padding: 0 2rem;
 }
 
-.terms{
+.terms {
   font-size: 0.7rem;
-  margin-top: -0.7rem;
   color: rgba(214, 217, 219, 0.509);
   margin-bottom: 2rem;
 }
 
-.terms a{
-  color: rgb(0,172,237);
+.terms a {
+  color: rgb(0, 172, 237);
 }
 
 .terms a:visited,
-.terms a:hover{
+.terms a:hover {
   text-decoration: underline;
 }
 
-.have-account #signin{
-  color: rgb(0,172,237);
+.have-account #signin {
+  color: rgb(0, 172, 237);
 }
 
-.have-account a{
+.have-account a {
   background-color: transparent;
-  border-color:rgba(168, 219, 237, 0.471) ;
+  border-color: rgba(168, 219, 237, 0.471);
   border-style: solid;
   border-width: 0.1rem;
 }
 
 /*------------------------------TWITTER ART------------------------------------------*/
-.art{
+.art {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0.2rem;
 }
 
-.art .art-icon{
+.art .art-icon {
   position: absolute;
 }
 
-.art-background img{
+.art-background img {
   width: 150%;
   height: 150%;
 }
 
-.art-icon i{
+.art-icon i {
   font-size: 20rem;
 }
 
 /*----------------------------FOOTER-----------------------*/
-.footer{
+.footer {
   justify-content: center;
   text-align: center;
   font-size: 0.8rem;
@@ -166,18 +162,59 @@ main h2{
 }
 
 .footer p,
-.footer a{
+.footer a {
   font-size: 12px;
   align-items: center;
   color: rgba(214, 217, 219, 0.603);
   display: inline-block;
 }
 
-
-.footer a{
+.footer a {
   margin: 0.2rem;
 }
 
-.footer a:hover{
+.footer a:hover {
   text-decoration: underline;
+}
+
+/*----------------------------RESPONSIVITY-----------------------*/
+
+@media (min-width: 767px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .logo i {
+    font-size: 4.5rem;
+  }
+
+  #header h1 {
+    font-size: 5rem;
+  }
+
+  main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .buttons {
+    gap: 1.8rem;
+  }
+
+  .buttons a img {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .buttons a i {
+    font-size: 1.7rem;
+  }
+
+  .buttons .or {
+    gap: 0.4rem;
+  }
+
+  .buttons .or p {
+    font-size: 1rem;
+  }
 }
