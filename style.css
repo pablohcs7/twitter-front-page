@@ -1,8 +1,6 @@
 /*============RESET================*/
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 a {
@@ -157,8 +155,10 @@ main h2 {
   justify-content: center;
   text-align: center;
   font-size: 0.8rem;
-  margin-bottom: 0.3rem;
   padding: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
 .footer p,
@@ -166,7 +166,9 @@ main h2 {
   font-size: 12px;
   align-items: center;
   color: rgba(214, 217, 219, 0.603);
-  display: inline-block;
+  line-height: 0;
+  padding: 3px;
+  display: flex;
 }
 
 .footer a {
