@@ -1,6 +1,8 @@
 /*============RESET================*/
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -72,7 +74,7 @@ main h2 {
 
 #button-google .text-button {
   font-family: 'Roboto', sans-serif;
-  color: rgba(0, 0, 0, 0.986);
+  color: #3c4043;
 }
 
 .buttons a img {
@@ -166,10 +168,9 @@ main h2 {
   align-items: center;
   color: rgba(214, 217, 219, 0.603);
   line-height: 0;
-  padding: 5px;
+  padding: 6px;
+  padding-top: 8px;
   display: flex;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2;
   font-weight: 200;
 }
 
@@ -193,7 +194,7 @@ p span {
   }
 
   #header {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
   .logo {
@@ -246,10 +247,11 @@ p span {
     font-size: 25rem;
   }
 
-  /*----------------------------FOOTER-----------------------*/
   .terms {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
+
+  /*----------------------------FOOTER-----------------------*/
 
   .footer p,
   .footer a {
@@ -258,3 +260,67 @@ p span {
 }
 
 /*----------------------------RESPONSIVITY 1024-----------------------*/
+@media (min-width: 1024px) {
+  /*----------------- BASE --------------------*/
+  main {
+    display: flex;
+    align-items: center;
+    max-height: calc(100vh - 51px);
+  }
+
+  .container {
+    margin: 2rem;
+  }
+
+  .button {
+    font-size: 1.1rem;
+  }
+
+  .flex {
+    order: 1;
+    max-height: calc(100vh - 51px);
+  }
+
+  .art {
+    order: 0;
+  }
+
+  .art-background img {
+    max-height: 100%;
+    height: calc(100vh - 55px);
+    object-fit: cover;
+    width: 45vw;
+  }
+
+  /*----------------- BUTTONS SIDE --------------------*/
+  .logo i {
+    font-size: 3.5rem;
+  }
+
+  #header h1 {
+    font-size: 4.2rem;
+  }
+
+  .login {
+    width: 20.8rem;
+  }
+
+  .buttons a img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .buttons a i {
+    font-size: 1.5rem;
+  }
+
+  /*----------------- FOOTER --------------------*/
+  .footer {
+    padding: 0.5rem;
+  }
+
+  .footer p,
+  .footer a {
+    padding: 8px;
+  }
+}
