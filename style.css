@@ -240,7 +240,7 @@ p span {
   .art-background img {
     width: 100%;
     height: 100%;
-    max-height: 30rem;
+    min-height: 30rem;
   }
 
   .art-icon i {
@@ -322,5 +322,12 @@ p span {
   .footer p,
   .footer a {
     padding: 8px;
+  }
+}
+
+/*----------------------------RESPONSIVITY 1200+-----------------------*/
+@media (min-width: 1200px) {
+  .art-background img {
+    width: 55vw;
   }
 }
