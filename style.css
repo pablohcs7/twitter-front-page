@@ -278,7 +278,7 @@ p span {
 
   .flex {
     order: 1;
-    max-height: calc(100vh - 51px);
+    height: 100%;
   }
 
   .art {
